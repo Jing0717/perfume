@@ -1,0 +1,77 @@
+@mixin mobile {
+    @media (max-width:768px) {
+        @content
+    }
+}
+h1{
+    font-size: 40px;
+    line-height: 60px;
+}
+h2{
+    font-size: 32px;
+    line-height: 48px;
+}
+h3{
+    font-size: 24px;
+    line-height: 36px;
+}
+h4{
+    font-size: 20px;
+    line-height: 30px;
+}
+h5{
+    font-size: 16px;
+    line-height: 24px;
+}
+h6{
+    font-size: 14px;
+    line-height: 21px;
+}
+.mb60 {
+    margin-bottom: 60px;
+}
+.mt52{
+    margin-top: 52px;
+}
+// 字型
+.en_text {
+    font-family: $en_text;
+}
+.ch_text {
+    font-family: $ch_text;
+}
+// 字體大小
+.text_large{
+    font-size: 40px;
+    line-height: 60px;
+}
+.text_medium{
+    font-size: 24px;
+    line-height: 36px;
+}
+.text_normal {
+    font-size: 20px;
+    line-height: 30px;
+}
+// 字型顏色
+.text_white{
+    color:#fff;
+}
+// 字型粗細
+.weight_bold{
+    font-weight: bold;
+}
+.weight_normal{
+    font-weight: normal;
+}
+.weight_lighter{
+    font-weight: lighter;
+}
+
+.fx_d_rr{
+    flex-direction: row-reverse;
+}
+.discount{
+    text-decoration: line-through;
+    color: #8D8D8D;
+}
