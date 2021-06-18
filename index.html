@@ -7,30 +7,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
   <link rel="stylesheet" href="css/all.css">
 </head>
 
 <body>
-  <div class="header en_text text_normal">
-    <div class="logo">
-      <img src="img/d’Perfume.png" alt="Perfume logo">
+  <div class="m_auto">
+    <div class="header en_text text_normal container">
+      <h1 class="logo"><a href="#"><img src="img/d’Perfume.png" alt="logo"></a></h1>
+      <ul class="menu">
+        <li class="m-none"><a href="product.html"><i class="material-icons">store</i>Product</a></li>
+        <li class="m-none"><a href="#"><i class="material-icons">
+              person
+            </i><span>log in</span></a></li>
+        <li class="m-none"><a href="#"><span class="material-icons">
+              favorite
+            </span><span>Wishlist</span></a></li>
+        <li><a href="#">
+            <i class="material-icons">shopping_cart</i>
+            <span>Cart(3)</span>
+            <em>3</em></a>
+        </li>
+        <li>
+          <a href="#"><img class="bar_img" src="img/bars.svg" alt=""></a>
+        </li>
+      </ul>
     </div>
-    <ul class="nav">
-      <li class="nav_item">
-        <a href="#"><span class="material-icons">store</span>
-          <span>Product</span></a>
-      </li>
-      <li class="nav_item"><a href="#"><span class="material-icons">
-            person
-          </span><span>log in</span></a></li>
-      <li class="nav_item"><a href="#"><span class="material-icons">
-            favorite
-          </span><span>Wishlist</span></a></li>
-      <li class="nav_item"><a href="#"><span class="material-icons">
-            shopping_cart
-          </span><span>Cart(3)</span></a></li>
-    </ul>
   </div>
+
   <div class="banner en_text text_white mb60">
     <div class="banner_container">
       <div class="banner_content">
@@ -43,7 +48,58 @@
       </div>
     </div>
   </div>
-  <div class="introduction mb60">
+  <!--  -->
+  <ul class="container topProduct mb60">
+    <li class="topProduct_row topProduct_rowReverse">
+      <div class="topProduct_img">
+        <img src="img/index2.jpg" alt="">
+      </div>
+      <div class="topProduct_content">
+        <h2 class="weight_bold">Five O’clock Au Gingembre</h2>
+        <h4>生薑與溫醇的肉桂香、紅糖的香甜摻和成一氣，溫暖微辛的氣息反倒形成一股輕煙氤氳開來，還帶點微微煙醺感漫溢在整個鼻息之間，細聞之下,又還有溫溫淡淡的木香，溫和而暖心。</h4>
+        <h5><a href="#">查看更多</a></h5>
+      </div>
+    </li>
+    <li class="topProduct_row">
+      <div class="topProduct_img">
+        <img src="img/index3.png" alt="">
+      </div>
+      <div class="topProduct_content">
+        <h2 class="weight_bold">CHANEL N°5</h2>
+        <h4>N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</h4>
+        <h5><a href="#">查看更多</a></h5>
+      </div>
+    </li>
+    <li class="topProduct_row topProduct_rowReverse">
+      <div class="topProduct_img">
+        <img src="img/p6.jpg" alt="">
+      </div>
+      <div class="topProduct_content">
+        <h2 class="weight_bold">CHANEL N°5</h2>
+        <h4>N°5，女性魅力的極致精髓。散發柔美澄透的乙醛花束香氣。經典傳奇香氛，蘊藏於極簡設計的獨特瓶身。</h4>
+        <h5><a href="#">查看更多</a></h5>
+      </div>
+    </li>
+    <li class="topProduct_row ">
+      <div class="topProduct_img">
+        <img src="img/index5.jpg" alt="">
+      </div>
+      <div class="topProduct_content topProduct_big">
+        <h3 class="weight_bold">1. <br> Levels of Preventive Maintenance Compliance</h3>
+        <h5>The core idea of preventative maintenance is the performance of proactive actions against unscheduled
+          downtime in order to identify potential defects before they evolve into something more severe.</h5>
+        <h3 class="mt52 weight_bold">2.<br> Percentage of Planned Maintenance</h3>
+        <h5>The planned maintenance percentage is the total planned maintenance time in your CMMS software over a date
+          range over the total number of hours of a service performed by the technicians.</h5>
+        <h3 class="mt52 weight_bold">3.<br> Critical percentage of planned maintenance</h3>
+        <h5 class="mb60">Calculating the critical percentage of planned maintenance will help you prioritize the most
+          important operations that should be performed immediately.</h5>
+        <h4 class="plan_btn weight_bold">Plan a free online training</h4>
+      </div>
+    </li>
+  </ul>
+  <!--  -->
+  <!-- <div class="introduction mb60">
     <div class="introduction_row">
       <div class="introduction_text">
         <h2 class="weight_bold">Gabrielle CHANEL</h2>
@@ -91,11 +147,13 @@
         <h4 class="plan_btn weight_bold">Plan a free online training</h4>
       </div>
     </div>
-  </div>
+  </div> -->
   <div class="others mb60">
-    <div class="others_content">
+    <div class="container others_content">
       <div class="others_card">
-        <img src="img/index6.jpg" alt="index6">
+        <div class="card_img">
+          <img src="img/photo-1530630458144-014709e10016@2x.png" alt="index6">
+        </div>
         <div class="card_text">
           <h3>Poppy & Barley</h3>
           <h5>Jo Malone</h5>
@@ -103,7 +161,9 @@
         </div>
       </div>
       <div class="others_card">
-        <img src="img/index7.jpg" alt="index7">
+        <div class="card_img">
+          <img src="img/photo-1556228720-da4e85f25e15@2x.png" alt="index7">
+        </div>
         <div class="card_text">
           <h3>Body Wash</h3>
           <h5>Curology</h5>
@@ -111,9 +171,8 @@
         </div>
       </div>
       <div class="others_card">
-        <div class="sold_out">
-          <img src="img/index8.jpg" alt="index8">
-          <h3 class="sold_out_cover">Sold out</h3>
+        <div class="card_img">
+          <img src="img/photo-1559264730-1533a6ec0433@2x.png" alt="index8">
         </div>
         <div class="card_text">
           <h3>Apple Cider Vinegar Capsule</h3>
@@ -123,7 +182,38 @@
       </div>
     </div>
   </div>
-  <div class="recycle">
+  <!-- <div class="others mb60">
+    <div class="others_content container">
+      <div class="others_card">
+        <img src="img/photo-1530630458144-014709e10016@2x.png" alt="index6">
+        <div class="card_text">
+          <h3>Poppy & Barley</h3>
+          <h5>Jo Malone</h5>
+          <h5>NT$1,380 <span class="discount">NT$1,580</span> </h5>
+        </div>
+      </div>
+      <div class="others_card">
+        <img src="img/photo-1556228720-da4e85f25e15@2x.png" alt="index7">
+        <div class="card_text">
+          <h3>Body Wash</h3>
+          <h5>Curology</h5>
+          <h5>NT$1,580</h5>
+        </div>
+      </div>
+      <div class="others_card">
+        <div class="sold_out">
+          <img src="img/photo-1559264730-1533a6ec0433@2x.png" alt="index8">
+          <h3 class="sold_out_cover">Sold out</h3>
+        </div>
+        <div class="card_text">
+          <h3>Apple Cider Vinegar Capsule</h3>
+          <h5>Tonik</h5><br>
+          <h5>NT$1,580</h5>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="recycle container">
     <div class="recycle_img">
       <img src="img/index9.jpg" alt="">
     </div>
@@ -142,7 +232,9 @@
       <h2>記得 <br> 訂閱以獲取更多資訊！</h2>
       <div class="info_email">
         <input type="text" value="Your email address">
-        <button class="info_btn"><a href="#"><h5>Subscribe</h5></a></button>
+        <button class="info_btn"><a href="#">
+            <h5>Subscribe</h5>
+          </a></button>
       </div>
     </div>
   </div>
@@ -151,7 +243,7 @@
       <img src="img/d’Perfumewhite.png" alt="Perfume logo">
       <span>&nbsp;&nbsp;&nbsp;© 2020. All Rights Reserved.</span>
     </div>
-    <div class="footer_nav">
+    <div class="footer_nav m-none">
       <h4><a href="#">Product</a></h4>
       <h4><a href="#">Blog</a></h4>
       <h4><a href="#">Contact</a></h4>

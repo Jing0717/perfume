@@ -88,6 +88,13 @@ h6 {
   line-height: 21px;
 }
 
+.container {
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .mb60 {
   margin-bottom: 60px;
 }
@@ -147,35 +154,139 @@ h6 {
   color: #8D8D8D;
 }
 
-.header {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 9px 0;
-  position: fixed;
-  background-color: #fff;
+.product_nav {
+  background-color: #916000;
+  margin-top: 70px;
+  height: 52px;
+  color: #fff;
 }
-.header a {
-  display: block;
-  text-decoration: none;
-  color: #8d8d8d;
-}
-
-.nav {
+.product_nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: SF Pro Text;
+  padding: 20px 0;
+}
+.product_nav ul li {
+  padding-right: 28px;
+}
+.product_nav ul li a {
+  text-decoration: none;
+  color: #fff;
 }
 
-.nav_item a {
+.product_page {
+  padding-bottom: 60px;
+}
+
+.product_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 80px;
+}
+.product_content .perfume_card {
+  width: 25%;
+  max-width: 255px;
+  padding-bottom: 58px;
+}
+.product_content .perfume_card a {
+  text-decoration: none;
+  color: #916000;
+}
+.product_content .perfume_card em {
+  text-decoration: line-through;
+  color: #8d8d8d;
+  padding-left: 8px;
+}
+
+.product_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.product_btns li {
+  padding: 0 5px;
+}
+.product_btns li a:hover {
+  text-decoration: underline;
+  color: #916000;
+}
+.product_btns a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 0 5px;
+}
+
+@media (max-width: 992px) {
+  .product_nav {
+    display: none;
+  }
+
+  .product_page {
+    padding-bottom: 40px;
+  }
+
+  .product_content .perfume_card {
+    width: 50%;
+    max-width: 45vw;
+    padding-bottom: 30px;
+  }
+}
+.m_auto {
+  height: 60px;
+  width: calc(100vw-9px);
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  background-color: #fff;
+}
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .menu li {
+  padding: 5px;
+}
+.header .menu em {
+  display: none;
+}
+.header .menu a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,10 +296,46 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5px;
+  text-decoration: none;
   color: #8d8d8d;
-  margin-left: 32px;
+}
+.header .bar_img {
+  display: none;
 }
 
+@media (max-width: 992px) {
+  .header .menu span {
+    display: none;
+  }
+
+  .header .menu img {
+    display: block;
+    position: relative;
+  }
+
+  .header .bar_img {
+    display: block;
+  }
+
+  .header .menu em {
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 70px;
+    background: #916000;
+    color: #fff;
+    border-radius: 11px;
+    line-height: 20px;
+  }
+
+  .m-none {
+    display: none;
+  }
+}
 .banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -232,6 +379,94 @@ h6 {
 .banner_btn a {
   display: block;
   text-decoration: none;
+}
+
+.topProduct_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.topProduct_row .topProduct_big {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (max-width: 992px) {
+  .topProduct .topProduct_img {
+    width: 100%;
+  }
+  .topProduct .topProduct_img img {
+    width: 100%;
+  }
+
+  .topProduct .topProduct_row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .topProduct .topProduct_row .topProduct_row img {
+    width: 100%;
+  }
+
+  .topProduct .topProduct_content {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 32px;
+  }
+}
+.topProduct_content {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 8%;
+}
+.topProduct_content a {
+  text-decoration: none;
+  color: #916000;
+}
+
+.topProduct .topProduct_row .topProduct_longContent {
+  width: 50%;
+  padding: 0;
+}
+
+.topProduct_img {
+  width: 50%;
+}
+
+.topProduct_rowReverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.topProduct_content .plan_btn {
+  border: 2px solid #000;
+  border-radius: 30px;
+  text-align: center;
+  padding: 12px 0;
 }
 
 .introduction {
@@ -322,14 +557,15 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1110px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.others .others_card {
+  width: 32%;
+}
 .others .others_card img {
-  width: 350px;
-  height: 540px;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -346,30 +582,59 @@ h6 {
   color: #fff;
 }
 
+@media (max-width: 992px) {
+  .others .others_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .others .others_content .others_card {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .others .others_content .others_card img {
+    width: 100%;
+  }
+}
 .recycle {
-  max-width: 1110px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 60px;
 }
-.recycle .recycle_img img {
-  max-width: 730px;
-}
-.recycle .recycle_text {
-  margin-left: 30px;
-}
 .recycle .text_brown {
   color: #916000;
 }
+.recycle .recycle_img {
+  width: 60%;
+}
+.recycle .recycle_text {
+  width: 36%;
+}
 
+@media (max-width: 992px) {
+  .recycle {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .recycle .recycle_img {
+    width: 100%;
+  }
+  .recycle .recycle_img img {
+    width: 100%;
+  }
+}
 .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,9 +696,8 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -465,4 +729,16 @@ h6 {
 .footer .footer_nav a {
   color: #fff;
   text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .footer .m-none {
+    display: none;
+  }
+
+  .footer .footer_logo {
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
